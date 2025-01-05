@@ -1,0 +1,34 @@
+/* Write your CSS here */
+.todo-item-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.todo {
+  font-size: 18px;
+  font-family: 'Roboto';
+  color: #000000;
+  margin-right: 10px;
+  @media screen and (min-width:768px){
+    font-size:22px;
+  }
+}
+
+.butn {
+  background-color: transparent;
+  color: #ff0b37;
+  border: 1px solid #ff0b37;
+  height: 30px;
+  width: 50px;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 8px;
+  @media screen and (min-width:768px){
+    width:65px;
+    height:35px;
+    font-size:16px;
+  }
+}
