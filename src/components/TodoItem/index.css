@@ -1,19 +1,49 @@
 /* Write your CSS here */
 .todo-item-cont {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+}
+@media screen and (min-width: 575px) {
+  .todo-item-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .todo {
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Roboto';
   color: #000000;
   margin-right: 10px;
-  @media screen and (min-width:768px){
-    font-size:22px;
+  flex-grow: 1;
+}
+@media screen and (min-width: 767px) {
+  .todo {
+    font-size: 22px;
+  }
+}
+
+.editInput {
+  padding: 5px;
+  outline: none;
+  border: 1px solid black;
+  height: 30px;
+  font-size: 20px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 575px) {
+  .editInput {
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    height: 25px;
+    font-size: 18px;
   }
 }
 
@@ -26,9 +56,15 @@
   padding: 5px;
   font-size: 12px;
   border-radius: 8px;
-  @media screen and (min-width:768px){
-    width:65px;
-    height:35px;
-    font-size:16px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 767px) {
+  .butn {
+    width: 65px;
+    height: 35px;
+    font-size: 18px;
   }
+}
+.butn-cont {
+  display: flex;
 }

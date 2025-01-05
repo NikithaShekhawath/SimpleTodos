@@ -7,8 +7,10 @@
   justify-content: center;
   padding: 20px;
   min-height: 100vh;
-  @media screen and (min-width:768px){
-    padding:40px;
+}
+@media screen and (min-width: 768px) {
+  .bg-cont {
+    padding: 40px;
   }
 }
 
@@ -21,7 +23,6 @@
   padding: 20px;
   padding-right: 30px;
   border-radius: 8px;
-  
 }
 
 .heading {
@@ -34,8 +35,60 @@
 .list-cont {
   display: flex;
   flex-direction: column;
-  width:100%;
-  @media screen and (min-width:768px){
-    width:80%;
+  width: 100%;
+  padding-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .list-cont {
+    width: 80%;
+  }
+}
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+@media screen and (min-width: 575px) {
+  .input-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin-bottom: 15px;
+  }
+}
+
+.todo-input {
+  padding: 5px;
+  outline: none;
+  border: 1px solid black;
+  height: 30px;
+  font-size: 20px;
+}
+@media screen and (min-width: 575px) {
+  .todo-input {
+    height: 40px;
+    font-size: 22px;
+  }
+}
+
+.add-butn {
+  height: 30px;
+  width: 55px;
+  font-size: 20px;
+  background-color: #ffc2a0;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 575px) {
+  .add-butn {
+    width: 90px;
+    height: 40px;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 8px;
   }
 }
